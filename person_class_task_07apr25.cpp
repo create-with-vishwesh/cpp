@@ -6,14 +6,14 @@ class Person {
     private:
     char name[30];
     char address[100];
-    long int phonenumber;
+    float phonenumber;
     float h,w;
 
     public:
     Person(){
             strcpy(name, "Rajesh");
             strcpy(address, "Pune");
-            phonenumber=123456;
+            phonenumber=987654321;
             h=5.6;
             w=60.0;
     }
@@ -35,8 +35,8 @@ void Person :: scandetails(){
 }
 
 void Person :: displaydetails(){
-    cout<<"\nName\tAddress\tPhoneNum\tHeight\tWeight\n";
-    cout<<name<<"\t"<<address<<"\t"<<phonenumber<<"\t"<<h<<"\t"<<w<<"\n";
+    cout<<"\nName\tAddress\tPhoneNumber\tHeight\tWeight\n";
+    cout<<name<<"\t"<<address<<"\t"<<phonenumber<<"\t"<<h<<"ft"<<"\t"<<w<<"kg"<<"\n";
 }
 
 int main(){
